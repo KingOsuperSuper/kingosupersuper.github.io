@@ -11,7 +11,7 @@
     
     
     <title>KingOsuper&#39;s Blog</title>
-    <link href="https://sprite.github.io" rel="prefetch" />
+    <link href="https://kingosuper.zyglq.cn" rel="prefetch" />
 
     
 <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -78,7 +78,7 @@
                     aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="https://sprite.github.io">
+            <a href="https://kingosuper.zyglq.cn">
                 
                 <style>
                     #gal-header .navbar-brand {
@@ -137,7 +137,7 @@
                 
                 <li class="">
                     <a href="/about">
-                        <i class="fa fa-user"></i>关于我
+                        <i class="fa fa-user"></i>关于这个憨批
                     </a>
                 </li>
                 
@@ -192,7 +192,7 @@
                 <a href="/2022/02/26/Test/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview4.jpg" alt="Test">
+                        <img src="/imgs/preview/preview2.jpg" alt="Test">
                     </div>
                     <div class="info">
                         
@@ -264,6 +264,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -477,6 +479,30 @@
 <script src="/js/blog.js"></script>
 
 
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = ''
+      window.commentConfig.repo = ''
+      window.commentConfig.client_id = ''
+      window.commentConfig.client_secret = ''
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: '',
+        repo: '',
+        client_id: '',
+        client_secret: '',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
